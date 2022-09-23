@@ -1,0 +1,123 @@
+body{
+    background-color: #3d4551;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height:50px;
+    margin-right: 10px;
+}
+nav{
+    font-weight: 600;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor h1 {
+font-size:3rem;
+color: coral;
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    height:  100vh;
+    padding: 15px;
+}
+
+.calculator{
+display: flex;
+flex-direction:  column;
+width: 500px;
+font-size: 2rem;
+border: 1px solid gray;
+}
+
+.calculator-display{
+background-color: #995AE6;
+padding: 25px 15px;
+width: 100%;
+text-align: right;
+border: 1px solid gray;
+overflow-x: auto;
+
+}
+
+.calculator-kaypad{
+display: flex;
+width: 100%;
+}
+
+.keypad-numbers{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.keypad-button{
+width: 25%;
+padding: 15px 0;
+text-align: center;
+cursor: pointer;
+background-color: white;
+border: 1px solid gray;
+}
+
+.keypad-button:hover {
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+.keypad-button.yellow{
+    background-color: coral;
+
+}
+.keypad-button.large{
+    width: 50%;
+}
+
+.font-face {
+    font-size: 30px;
+    font-family:"Luckiest_Guy";
+  src: url("Luckiest_Guy/LuckiestGuy-Regular.ttf") format("truetype"); 
+}
+
+.keypad-button.xlarge{
+    width: 75%;
+}
+.keypad-button.dark{
+    background-color: lightgray;
+}
